@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","7101","TC_002 Add Employee","chromium","2026-06-22","passed","2026-06-22","","AddEmployee.spec.ts","",""
+"","8213","TC_003 Edit Employee","chromium","2026-06-22","passed","2026-06-22","","EditEmployee.spec.ts","",""
+"","5878","TC_001_Login_Logout","chromium","2026-06-22","passed","2026-06-22","","Login.spec.ts","",""
+"","15252","TC_004 Delete Employee","chromium","2026-06-22","passed","2026-06-22","","DeleteEmployee.spec.ts","",""
