@@ -1,10 +1,13 @@
 import{test} from '@playwright/test';
-import { general } from '../lib/General';   
+import { BasePage } from '../pages/BasePage';
+import { LoginPage } from '../pages/LoginPage';
+import { Logout } from '../pages/LogoutPage';
+import { AddEmployee } from '../pages/AddEmployee';
 
 test('TC_002 Add Employee',async({page})=>{
-    const gen = new general(page);
-    await gen.openApplication();
-    await gen.login();
-    await gen.addNewEmployee();
-    await gen.logout();
+    BasePage.page = page;
+    await BasePage.openApplication("https://ctcorphyd.com/SureshIT/login.php");
+    await LoginPage.login("sureshit","sureshit");
+    await AddEmployee.addNewEmployee("tom","som");
+    await Logout.logout();
 })
